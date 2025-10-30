@@ -2,23 +2,23 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: golist-frontend
-  name: golist-frontend
+    app: golist-deals
+  name: golist-deals
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: golist-frontend
+      app: golist-deals
   strategy: {}
   template:
     metadata:
       creationTimestamp: null
       labels:
-        app: golist-frontend
+        app: golist-deals
     spec:
       containers:
-      - image: quay.io/christianh814/golist-frontend:latest
-        name: golist-frontend
+      - image: quay.io/christianh814/golist-deals:latest
+        name: golist-deals
         livenessProbe:
           httpGet:
             path: /
@@ -40,4 +40,4 @@ spec:
       volumes:
         - name: config-volume
           configMap:
-            name: golist-frontend-config
+            name: golist-deals-config

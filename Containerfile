@@ -12,4 +12,4 @@ USER 1001
 
 RUN /usr/libexec/s2i/assemble
 
-CMD /usr/libexec/s2i/run
+CMD ["/usr/libexec/s2i/run"]

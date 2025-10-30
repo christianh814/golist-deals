@@ -1,3 +1,5 @@
 {
-        "api": "http://golist-api:8080/api/products"
+	"api": "http://golist-api-golist:8080",
+	"frontend": "http://golist:8080"
+
 }
