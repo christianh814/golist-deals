@@ -17,7 +17,7 @@ spec:
         app: golist-deals
     spec:
       containers:
-      - image: quay.io/christianh814/golist-deals:latest
+      - image: ghcr.io/christianh814/golist-deals:latest
         name: golist-deals
         livenessProbe:
           httpGet:
